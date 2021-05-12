@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">TaxiOne Customer</string>
-    <string name="mapbox_access_token">sk.eyJ1IjoicGVyY29iYWFuIiwiYSI6ImNraGVhaWFjczA2OXcyemx1dnl3anBmdjIifQ.1CbagvxZLB_cymAYtxHQOw</string>
+    <string name="mapbox_access_token">pk.eyJ1Ijoid2lseml4IiwiYSI6ImNrbmlrejlvbDAxMTYyd3BmMTl3b2JudDQifQ.OGaEOFURnfsszb65FoE8IA</string>
 
     ////////
     <string name="introtext1">Sign up now!</string>

@@ -5,6 +5,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
 import io.realm.Realm;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -596,9 +597,10 @@ public class DetailOrderActivity extends AppCompatActivity implements ItemItem.O
                 public void onResponse(@NonNull Call<GetNearRideCarResponseJson> call, @NonNull Response<GetNearRideCarResponseJson> response) {
                     if (response.isSuccessful()) {
                         driverAvailable = Objects.requireNonNull(response.body()).getData();
+                        System.out.println("DATA--------------------------->"+driverAvailable);
                         if (driverAvailable.isEmpty()) {
                             finish();
-                            Toast.makeText(DetailOrderActivity.this, "no driver arround you!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(DetailOrderActivity.this, "no driver around you!", Toast.LENGTH_SHORT).show();
                         } else {
                             sendRequestTransaksi(paramdata, driverAvailable);
                         }
